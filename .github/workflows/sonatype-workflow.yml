@@ -13,8 +13,8 @@ jobs:
         uses: sonatype/actions/evaluate@v1.1.0
         with:
           iq-server-url: https://iq.mcupitt.ngrok.io
-          username: ${{ secrets.SONATYPE_USERNAME }}
-          password: ${{ secrets.SONATYPE_PASSWORD }}
+          username: ${{ secrets.SONATYPE_IQ_USERNAME }}
+          password: ${{ secrets.SONATYPE_IQ_PASSWORD }}
           application-id: nodegoat-github-maurycupitt
           scan-targets: package.json package-lock.json
           sarif-file: 'result.sarif'
