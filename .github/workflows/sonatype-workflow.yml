@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v4
       - name: Run evaluate action
         id: evaluate
-        uses: sonatype/actions/evaluate@v1.1
+        uses: sonatype/actions/evaluate@v1.1.0
         with:
           iq-server-url: https://iq.mcupitt.ngrok.io
           username: ${{ secrets.SONATYPE_USERNAME }}
